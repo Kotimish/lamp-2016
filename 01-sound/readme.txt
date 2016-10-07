@@ -24,7 +24,7 @@ git config --system http.sslverify false
 Задания и примеры размещаются в каталоге `assignments/`
 ```
 $ node ex1_file.js
-$ node ex2_freq_begin.js
+$ node ex2_freq.js
 ```
 
 5. Сгенерировать файл формата `.raw` с частотой дискретизации 8000Гц и звуком частотой 425 Гц
