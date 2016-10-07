@@ -4,10 +4,9 @@ var
   b  = new Buffer(1000),
   i = 0;
   AMP = 10;
+
 while (i < b.length) {
-  
-  value = AMP * Math.sin(2*Math.PI*i/10);
-  b[i] = Math.ceil(value);
+  b[i] = i;
   i++;
 }
 
