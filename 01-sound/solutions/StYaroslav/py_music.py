@@ -5,13 +5,13 @@ def gener(i, Gz):
         AMP=63.5
         diskr=44100
         
-        value = AMP*math.sin(2*math.pi*i*Gz1/diskr)
+        value = AMP*math.sin(2*math.pi*i*Gz/diskr)
 
         return value
 
 def plus_nota(Gz1, Gz2):
         noise_file = open('noise.raw', 'ab')
-        for i in range(0, 11025):
+        for i in range(0, 5000):
                 value = gener(i, Gz1) + gener(i, Gz2)
                 #print(str(value))
                 value=int(value)
