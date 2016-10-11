@@ -1,0 +1,17 @@
+{
+  "name": "gismeteo.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "x1.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alykoshin <alykoshin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
