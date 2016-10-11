@@ -3,7 +3,6 @@ var
   fd = fs.openSync('./test.raw', 'w'),
   b  = new Buffer(1000),
   i = 0;
-  AMP = 10;
 
 while (i < b.length) {
   b[i] = i;

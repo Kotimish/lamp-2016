@@ -2,11 +2,14 @@ var
   fs = require('fs'),
   fd = fs.openSync('./test.raw', 'w'),
   b  = new Buffer(1000),
+AMP=10;
   i = 0;
-  AMP = 10;
 
 while (i < b.length) {
-  b[i] = i;
+value = AMP * Math.sin(
+    2*Math.PI*i*425/8000
+  );
+  b[i] = value;
   i++;
 }
 
