@@ -9,14 +9,14 @@ var expect = chai.expect;
 
 
 // declaring global vars
-var math;
+var hev;
 
 
-describe('math', function() {
+describe('hev', function() {
 
   before('before', function() {
     // initializing common test data
-    math = require('../../lib/math.js');
+    hev = require('../../lib/hev.js');
   });
 
   beforeEach('beforeEach', function() {
@@ -29,27 +29,27 @@ describe('math', function() {
   });
 
 
-  describe('square', function() {
+  describe('hev', function() {
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square).to.be.a('function');
+      console.log(hev);
+      expect(hev.hev).to.be.a('function');
 
     });
 
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square(8)).to.be.equal(64);
+      console.log(hev);
+      expect(hev.hev(8)).to.be.equal(8);
 
     });
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square(-8)).to.be.equal(64);
+      console.log(hev);
+      expect(hev.hev(-8)).to.be.equal(0);
 
     });
 

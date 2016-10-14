@@ -1,19 +1,19 @@
 'use strict';
 
 
-var square = function(x) {
+var cos = function(x) {
   
   // This 'black box' function must return square of x.
   // Does it work properly ?
 
-  x = x*x;
+  x = Math.cos(x);
 
   return x;
 };
 
 
 module.exports = {
-  square: square
+  cos: cos
 
 
 };

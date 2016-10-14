@@ -9,14 +9,14 @@ var expect = chai.expect;
 
 
 // declaring global vars
-var math;
+var cos;
 
 
-describe('math', function() {
+describe('cos', function() {
 
   before('before', function() {
     // initializing common test data
-    math = require('../../lib/math.js');
+    cos = require('../../lib/cos.js');
   });
 
   beforeEach('beforeEach', function() {
@@ -29,27 +29,27 @@ describe('math', function() {
   });
 
 
-  describe('square', function() {
+  describe('cos', function() {
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square).to.be.a('function');
+      console.log(cos);
+      expect(cos.cos).to.be.a('function');
 
     });
 
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square(8)).to.be.equal(64);
+      console.log(cos);
+      expect(cos.cos(3)).to.be.equal(Math.cos(3));
 
     });
 
     it('is a function', function () {
 
-      console.log(math);
-      expect(math.square(-8)).to.be.equal(64);
+      console.log(cos);
+      expect(cos.cos(0)).to.be.equal(1);
 
     });
 
