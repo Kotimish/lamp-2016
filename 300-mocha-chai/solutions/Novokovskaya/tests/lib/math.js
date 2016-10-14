@@ -37,14 +37,31 @@ describe('math', function() {
       expect(math.square).to.be.a('function');
 
     });
-it('2*2=4', function () {
+it('proverka 1', function () {
 
       console.log(math);
-      expect(math.square(2)).to.equal(4);
+      expect(math.square(1)).to.equal(1);
+
+    });
+it('proverka 8', function () {
+
+      console.log(math);
+      expect(math.square(8)).to.equal(2);
+
+    });
+it('proverka -8', function () {
+
+      console.log(math);
+      expect(math.square(-8)).to.equal(0);
 
     });
 
+it('proverka 0', function () {
 
+      console.log(math);
+      expect(math.square(0)).to.equal(0);
+
+    });
 
 });
 });
