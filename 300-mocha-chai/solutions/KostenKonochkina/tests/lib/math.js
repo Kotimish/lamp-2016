@@ -31,26 +31,26 @@ describe('math', function() {
 
   describe('square', function() {
 
-    it('is a function', function () {
+    it('2*2=4', function () {
 
       console.log(math);
       expect(math.square(2)).to.equal(4);
 
     });
-	it('is a function', function () {
+	it('3*3=9', function () {
 
       console.log(math);
       expect(math.square(3)).to.equal(9);
 
     });
-it('is a function', function () {
+it('27*27=729', function () {
 
       console.log(math);
       expect(math.square(27)).to.equal(729);
 
     });
 
-it('is a function', function () {
+it('-27*(-27)=729', function () {
 
       console.log(math);
       expect(math.square(-27)).to.equal(729);
